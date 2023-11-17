@@ -1,26 +1,32 @@
 # Matrix Abacus
 A tool to make matrix calculus more visual and easier :abacus:
 
----
-#### User-Guide
-- tutorial on how to use the matrix abacus;
+-- todo [add gif of matrix calculator working]
+
+## Description and goals
+This web app purpose is to suport and estimulate the students of mathematics subjects to work/play with matrices and their interesting and usefull operations. And how to do this? Giving them a cool, dinamic and gamelike tool that helps them to focus on the subjects at hand, without that never ending matrices writing and rewriting.   
 
 
-#### Tools :wrench: :toolbox: :
+## User-Guide
+- tutorial on how to use the matrix abacus; -- todo
+
+## Tools :wrench: :toolbox: :
+- [X] Design: Figma;
 - [ ] Front-end: HTML, CSS and JavaScript; -- work currently in progress
 - [ ] Back-end: Kotlin with Spring Framework.
 
-#### Design
--  [Figma](https://www.figma.com/file/jVJbsLhrX9q2V7FhVOsOks/Matrix-Abacus?type=design&node-id=0%3A1&mode=design&t=mQp1j4m9t0UD5Aec-1)
+## Screen's design
+-  [Figma Project](https://www.figma.com/file/jVJbsLhrX9q2V7FhVOsOks/Matrix-Abacus?type=design&node-id=0%3A1&mode=design&t=mQp1j4m9t0UD5Aec-1)
 
-#### Docs
+- add screens pics -- todo 
 
-**Development documentation**
-- links to a web documention -- work currenty in progress
+## Docs
+
+### Development documentation
+- links to a web documention -- work currently in progress
 
 
-**Official reports**
+### Academic reports
 - [x] Partial report with first screens and the main goals of the application;
 - [ ] Partial report descriving front-end development; -- work currently in progress
 - [ ] Final report with adding details about back-end development.
-
