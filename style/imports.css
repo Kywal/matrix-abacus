@@ -10,3 +10,9 @@
     font-family: 'Press Start 2P';
     box-sizing: border-box;
 }
+
+/* ------------ colors -------------- */
+
+:root {
+    --primary-color: #F3D34A;
+}

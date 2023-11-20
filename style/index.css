@@ -14,7 +14,7 @@ main {
     align-items: center;
     flex-direction: column;
 
-    background-color: #F3D34A;
+    background-color: var(--primary-color);
 }
 
 .main-title {
@@ -49,6 +49,5 @@ h1 {
     width: 7rem;
 
     border-radius: 0.4rem;
-
-    background-color: #F3D34A;
+    border: 1px solid black;
 }
