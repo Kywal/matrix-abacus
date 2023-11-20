@@ -49,5 +49,15 @@ h1 {
     width: 7rem;
 
     border-radius: 0.4rem;
-    border: 1px solid black;
+    border: 1px unset black;
+}
+
+.button:hover {
+    position: relative;
+    bottom: 0.4rem;
+    
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
 }
