@@ -4,7 +4,7 @@ A tool to make matrix calculus more visual and easier :abacus:
 -- todo [add gif of matrix calculator working]
 
 ## Description and goals
-This web app purpose is to suport and estimulate the students of mathematics subjects to work/play with matrices and their interesting and usefull operations. And how to do this? Giving them a cool, dinamic and gamelike tool that helps them to focus on the subjects at hand, without that never ending matrices writing and rewriting.   
+This web app purpose is to suport and estimulate the students of mathematics subjects to work/play with matrices and their interesting and usefull operations. And how to do that? Giving them a cool, dinamic and gamelike tool that helps them to focus on the subjects at hand, without that never ending matrices writing and rewriting.   
 
 
 ## User-Guide
@@ -18,7 +18,8 @@ This web app purpose is to suport and estimulate the students of mathematics sub
 ## Screen's design
 -  [Figma Project](https://www.figma.com/file/jVJbsLhrX9q2V7FhVOsOks/Matrix-Abacus?type=design&node-id=0%3A1&mode=design&t=mQp1j4m9t0UD5Aec-1)
 
-- add screens pics -- todo 
+- Landing page: ![landing page](docs/landing-page.png)
+- add more screens pics -- todo 
 
 ## Docs
 
