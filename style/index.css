@@ -26,15 +26,6 @@ main {
     gap: 1rem;
 }
 
-h1 {
-    font-size: 4rem;
-}
-
-#abacus-gif {
-    width: 3.5rem;
-    height: 3.5rem;
-}
-
 .buttons {
     width: 100%;
 
@@ -44,20 +35,7 @@ h1 {
     gap: 6rem;
 }
 
-.button {
+button {
     height: 2.5rem;
     width: 7rem;
-
-    border-radius: 0.4rem;
-    border: 1px unset black;
-}
-
-.button:hover {
-    position: relative;
-    bottom: 0.4rem;
-    
-    cursor: pointer;
-
-    background-color: black;
-    color: white;
 }
