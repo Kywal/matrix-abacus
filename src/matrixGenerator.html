@@ -12,12 +12,39 @@
         <div class="total-title">
             <div class="main-title">
                 <h1>GERADOR DE MATRIZES</h1>
+                <img src="../assets/imgs/abacus-gif.gif" alt="" id="abacus-gif">
             </div>
 
             <h4></h4>
         </div>
+
+        <form action="" class="matrix-dimension">
+            <div id="form-title">Por favor informe as dimensões da matriz:</div>
+            
+            <div class="general-input">
+                <div class="matrix-dimension-input">
+                    <label for="linhas">Linhas</label>
+                    <input type="number" id="linhas">
+                </div>
+
+                <span id="x-divisor">X</span>
+
+                <div class="matrix-dimension-input">
+                    <label for="colunas">Colunas</label>
+                    <input type="number" id="colunas">
+                </div>
+            </div>
+
+            <button id="generate-matrix" onmouseover="changeIcon(this)" onmouseout="unchangeIcon(this)" onclick="saveDimensions()">
+                Gerar Matriz
+                <img src="../assets/imgs/matrix-icon.svg" alt="">
+            </button>
+        </form>
+
     </main>
 
     <script src="../scripts/titleGenerator.js"></script>
+    <script src="../scripts/updateIcon.js"></script>
+    <script src="../scripts/saveMatrixDimension.js"></script>
 </body>
 </html>
