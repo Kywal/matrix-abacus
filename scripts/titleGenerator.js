@@ -1,3 +1,3 @@
 
-let title = document.querySelector(".main-title > h1");
+let title = document.querySelector("h4");
 title.innerText = sessionStorage.getItem("title");
