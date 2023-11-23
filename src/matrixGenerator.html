@@ -18,7 +18,7 @@
             <h4></h4>
         </div>
 
-        <form action="" class="matrix-dimension">
+        <div class="matrix-dimension">
             <div id="form-title">Por favor informe as dimensões da matriz:</div>
             
             <div class="general-input">
@@ -35,15 +35,17 @@
                 </div>
             </div>
 
-            <button id="generate-matrix" onmouseover="changeIcon(this)" onmouseout="unchangeIcon(this)" onclick="saveDimensions()">
-                Gerar Matriz
-                <img src="../assets/imgs/matrix-icon.svg" alt="">
-            </button>
-        </form>
+            <a href="matrixPlayground.html" id="link-matrix-playground">
+                <button id="generate-matrix" onmouseover="changeIcon(this)" onmouseout="unchangeIcon(this)" onclick="saveDimensions()">
+                    Gerar Matriz
+                    <img src="../assets/imgs/matrix-icon.svg" alt="">
+                </button>
+            </a>
+        </div>
 
     </main>
 
-    <script src="../scripts/titleGenerator.js"></script>
+    <script src="../scripts/subtitleGenerator.js"></script>
     <script src="../scripts/updateIcon.js"></script>
     <script src="../scripts/saveMatrixDimension.js"></script>
 </body>
