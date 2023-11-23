@@ -1,3 +1,4 @@
 
-let title = document.querySelector(".total-title > h4");
+/* ---------- generate title on matrixPlayground ------------ */
+let title = document.querySelector('h1');
 title.innerText = sessionStorage.getItem("title");
