@@ -96,7 +96,7 @@ span#x-divisor {
     font-size: 1.5rem;
 }
 
-a#link-matrix-playground {
+div#button-matrix-playground {
     width: 15rem;
 }
 
@@ -107,4 +107,24 @@ button#generate-matrix {
 
     width: 100%;
     height: 100%;
+}
+
+/* ------------------- Matrix confirmation --------------------- */
+
+.matrix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix-cell {
+    width: 2rem;
+    height: 2rem;
 }
