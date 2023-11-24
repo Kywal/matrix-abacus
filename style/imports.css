@@ -33,6 +33,12 @@ h1 {
     height: 4rem;
 }
 
+/* ------------ Links -----------------*/
+
+a {
+    text-decoration: none;
+}
+
 /* ------------ Buttons ---------------*/
 
 button {
