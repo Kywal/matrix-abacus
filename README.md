@@ -18,7 +18,7 @@ This web app purpose is to suport and estimulate the students of mathematics sub
 ## Screen's design
 -  [Figma Project](https://www.figma.com/file/jVJbsLhrX9q2V7FhVOsOks/Matrix-Abacus?type=design&node-id=0%3A1&mode=design&t=mQp1j4m9t0UD5Aec-1)
 
-- Landing page: ![landing page](docs/landing-page.png)
+- Landing page: ![landing page](docs/screen/landing-page.png)
 - add more screens pics -- todo 
 
 ## Docs
