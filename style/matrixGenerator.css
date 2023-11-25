@@ -31,7 +31,7 @@ h1 {
 }
 
 .matrix-dimension {    
-    height: 15rem;
+    height: 20rem;
     width: 25rem;
 
     display: flex;
@@ -83,11 +83,15 @@ div.matrix-dimension-input {
 
     text-align: center;
     font-size: 0.6rem;
+
+    gap: 0.2rem;
 }
 
 div.matrix-dimension-input > input{
     width: 3rem;
-    height: 2rem;
+    height: 3rem;
+
+    text-align: center;
 
     border-radius: 0.4rem;
 }
@@ -104,6 +108,7 @@ button#generate-matrix {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 0.5rem;
 
     width: 100%;
     height: 100%;
@@ -116,15 +121,23 @@ button#generate-matrix {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    gap: 0.05rem;
 }
 
 .matrix-line {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    gap: 0.05rem;
 }
 
 .matrix-cell {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    text-align: center;
+
+    border-radius: 0.4rem;
 }

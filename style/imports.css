@@ -56,6 +56,22 @@ button:hover {
     color: white;
 }
 
+/* ---------- Matrix Cell Input ---------- */
+
+/* --- Remove input number arrows -- */
+    /* Chrome, Safari, Edge, Opera */
+    .matrix-cell::-webkit-outer-spin-button,
+    .matrix-cell::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    .matrix-cell[type=number] {
+        -moz-appearance: textfield;
+    }
+
+
 /* ------------ colors -------------- */
 
 :root {

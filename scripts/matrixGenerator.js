@@ -11,12 +11,12 @@ function updateMatrixDimensionBox() {
         `
         <div id="form-title">Por favor insira os valores iniciais da matriz:</div>
         <div class="matrix"></div>
-        <div id="button-matrix-playground" onmouseover="changeIcon(this)" onmouseout="unchangeIcon(this)" >
+        <a href="matrixPlayground.html" id="button-matrix-playground" onmouseover="changeIcon(this)" onmouseout="unchangeIcon(this)" >
             <button id="generate-matrix">
                 Confirmar
                 <img src="../assets/imgs/matrix-icon.svg" alt="">
             </button>
-        </div>
+        </a>
         `;
     }
 
