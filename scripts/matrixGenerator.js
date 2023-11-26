@@ -69,7 +69,19 @@ function generateMatrixInput() {
 }
 
 function fillMatrix() {
+    const lines = sessionStorage.getItem("lines");
+    const columns = sessionStorage.getItem("columns");
+    const linesAmount = Number(lines);
+    const columnsAmount = Number(columns);
 
+    const matrixString = sessionStorage.getItem("matrix");
+    const matrix = jsonToMatrix(matrixString);
+
+    for (let i = 0; i < linesAmount; i++) {
+        for (let j = 0; j < columnsAmount; j++) {
+            document.getElementById(String(i) + String(j)).value = matrix[i][j];
+        }
+    }
 }
 
 /**
