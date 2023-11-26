@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="../style/matrixPlayground.css">
     <title>Matrix Abacus</title>
 </head>
-<body>
+<body onload="generateMatrixInput(); fillMatrix()">
     <main>
         <div class="main-title">
             <h1></h1>
         </div>
+
+        <div class="matrix-container">
+            <div class="matrix">
+            </div>
+        </div>
     </main>
     <script src="../scripts/titleGenerator.js"></script>
+    <script src="../scripts/matrixPlayground.js"></script>
+    <script src="../scripts/matrixGenerator.js"></script>
 </body>
 </html>

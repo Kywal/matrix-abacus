@@ -11,7 +11,7 @@ function updateMatrixDimensionBox() {
         `
         <div id="form-title">Por favor insira os valores iniciais da matriz:</div>
         <div class="matrix"></div>
-        <a href="matrixPlayground.html" id="button-matrix-playground" onmouseover="changeIcon(this)" onmouseout="unchangeIcon(this)" >
+        <a href="matrixPlayground.html" id="button-matrix-playground" onmouseover="changeIcon(this)" onmouseout="unchangeIcon(this)" onclick="saveMatrix()">
             <button id="generate-matrix">
                 Confirmar
                 <img src="../assets/imgs/matrix-icon.svg" alt="">
@@ -20,7 +20,7 @@ function updateMatrixDimensionBox() {
         `;
     }
 
-    generateMatrix();
+    generateMatrixInput();
 }
 
 /**
@@ -47,7 +47,7 @@ function saveDimensions() {
 /**
  * 
  */
-function generateMatrix() {
+function generateMatrixInput() {
     const lines = sessionStorage.getItem("lines");
     const columns = sessionStorage.getItem("columns");
     const linesAmount = Number(lines);
@@ -68,3 +68,58 @@ function generateMatrix() {
 
 }
 
+function fillMatrix() {
+
+}
+
+/**
+ * 
+ */
+function saveMatrix() {
+    let matrix = getMatrix();
+    let matrixString = matrixToJson(matrix);
+
+    sessionStorage.setItem("matrix", matrixString);
+}
+
+/**
+ * 
+ * @returns 
+ */
+function getMatrix() {
+    let matrix = [];
+    let line = [];
+    
+    const linesAmount = sessionStorage.getItem("lines");
+    const columnsAmount = sessionStorage.getItem("columns");
+
+    for (let i = 0; i < linesAmount; i++) {
+        for (let j = 0; j < columnsAmount; j++) {
+            line.push(document.getElementById(String(i) + String(j)).value);
+        }
+
+        matrix.push(line);
+        line = [];
+    }  
+
+    return matrix;
+}
+
+
+/**
+ * 
+ * @param {*} matrix 
+ * @returns 
+ */
+function matrixToJson(matrix) {
+    return JSON.stringify(matrix);  
+}
+
+/**
+ * 
+ * @param {*} jsonMatrix 
+ * @returns 
+ */
+function jsonToMatrix(jsonMatrix) {
+    return JSON.parse(jsonMatrix);   
+}
