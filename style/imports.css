@@ -56,6 +56,34 @@ button:hover {
     color: white;
 }
 
+/* ------------------- Matrix confirmation --------------------- */
+
+.matrix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.05rem;
+}
+
+.matrix-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.05rem;
+}
+
+.matrix-cell {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    text-align: center;
+
+    border-radius: 0.4rem;
+}
+
 /* ---------- Matrix Cell Input ---------- */
 
 /* --- Remove input number arrows -- */
