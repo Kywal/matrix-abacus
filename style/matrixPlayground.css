@@ -19,6 +19,14 @@ main {
     height: 100%;
 }
 
+.main-title {
+    width: 45rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
 .matrix-container {
     display: flex;
     justify-content: center;
