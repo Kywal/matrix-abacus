@@ -5,10 +5,63 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="resources/imgs/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./style/playground.css">
+        <link rel="stylesheet" href="../style/perfil.css">
         <title>Matrix Abacus</title>
     </head>
 <body>
+    <main>
+        <div class="main-title">
+            <h2>Perfil de  &#123user_name&#125</h2>
+        </div>
+
+        <div class="user-profile">
+            <div class="user-details">
+                <div class="user-pic">
+                    <img id="pic" src="../assets/imgs/programmer.png" alt="">
+                </div>
+                <p>&#123user_name&#125</p>
+                <label>
+                    Level:
+                    10
+                </label>
+            </div>
+
+            <div class="user-info">
+                <label for="">
+                    E-mail: student@ufrn.edu.br
+                </label>
+
+                <label for="">
+                    XP: 
+                    <meter id="xp-progress" value="45" min="0" max="120"></meter>
+                    <span>45/120</span>
+                </label>
+
+                <label>
+                    Exercícios realizados: 22
+                </label>
+            </div>
+        </div>
+    </main>
     
+    <div id="menu-burguer" onclick="showMenu(this)">
+        <img src="../assets/imgs/menu-button-of-three-horizontal-lines.png" alt="">
+    </div>
+
+    <aside>
+        <ul>
+            <li> 
+                <a href="../index.html">página inicial</a>
+            </li>
+            <li> 
+                <a href="playground.html">playground</a>
+            </li>
+            <li> 
+                <a href="perfil.html">perfil</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="../scripts/menuBurguer.js"></script>
 </body>
 </html>
