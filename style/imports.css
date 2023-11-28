@@ -61,13 +61,14 @@ ul {
     gap: 1rem;
 
     position: relative;
-    top: 2rem;
+    top: 3rem;
 
     width: 10rem;
     height: 10rem;
 
     color: white;
     text-align: start;
+    line-height: 1.2rem;
 
     padding: 1rem 0;
 
