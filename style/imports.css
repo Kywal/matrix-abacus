@@ -11,6 +11,69 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+}
+
+/* ------------ Menu Burguer ---------*/
+
+aside {
+    display: none;
+
+    border-style: solid;
+    border-width: 0 0 0 0.2rem;
+    border-color: white;
+
+    position: absolute;
+    width: 15rem;
+    height: 100%;
+
+    padding: 2rem;
+
+    background-color: black;
+    z-index: 0;
+}
+
+#menu-burguer {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 3rem;
+
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+
+    position: relative;
+    top: 2rem;
+
+    width: 10rem;
+    height: 10rem;
+
+    color: white;
+    text-align: start;
+
+    padding: 1rem 0;
+
+    list-style: none;
+}
+
 /* ------------ Main title -----------*/
 
 .main-title {
@@ -37,6 +100,7 @@ h1 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* ------------ Buttons ---------------*/
