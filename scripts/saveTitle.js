@@ -1,8 +1,8 @@
 
 /**
- * @description Receives the buttons html node and save its innerText in sessionStorage. 
+ * @description Receives the buttons html node that has been clicked in playground page and save its innerText in sessionStorage to use it later as subtitle. 
  *
- * @param {*} buttonHTML 
+ * @param {Node} buttonHTML 
  */
 function saveTitle(buttonHTML) {
     const newTitle = buttonHTML.innerText;
