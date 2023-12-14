@@ -14,7 +14,7 @@ function updateMatrixDimensionBox() {
         <a href="matrixPlayground.html" id="button-matrix-playground" onmouseover="changeIcon(this)" onmouseout="unchangeIcon(this)" onclick="saveMatrix()">
             <button id="generate-matrix">
                 Confirmar
-                <img src="../assets/imgs/matrix-icon.svg" alt="">
+                <img src="../../../../../../../assets/imgs/matrix-icon.svg" alt="">
             </button>
         </a>
         `;
