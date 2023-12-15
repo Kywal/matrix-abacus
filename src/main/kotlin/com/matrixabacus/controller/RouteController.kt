@@ -1,23 +1,25 @@
 package com.matrixabacus.controller
 
+import com.matrixabacus.service.UserService
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
 
 @Controller
-class RouteController {
+class RouteController(val userService: UserService) {
 
     @RequestMapping("/")
-    public fun welcome() : String {
+    fun welcome() : String {
         return "index.html";
     }
 
     @RequestMapping("playground")
-    public fun toPlayground() : String {
-        return "playground.html"
+    fun toPlayground() : String {
+        return "playground.html";
     }
     
     @RequestMapping("login")
-    public fun toLogin() : String {
-        return "perfil.html"
+    fun toLogin() : String {
+        return "perfil.html";
     }
+
 }
