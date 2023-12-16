@@ -31,12 +31,18 @@ class User() {
     @Column
     var xp: Int = 0
 
-    constructor(name: String, email: String, password: String) : this() {
-        this.username = name;
-        this.email = email;
-        this.password = password;
+    fun copy(id: Int? = null,
+             name: String = this.username,
+             email: String = this.email,
+             password: String = this.password,
+             exercisesCompleted: Int = this.exercisesCompleted,
+             level: Int = this.level,
+             xp: Int = this.xp) : User {
+
+        return User(id, name, email, password, exercisesCompleted, level, xp);
     }
-    constructor(id: Int?,name: String, email: String, password: String, exercisesCompleted: Int, level: Int, xp: Int) : this() {
+
+    constructor(id: Int? = null,name: String = "", email: String = "", password: String = "", exercisesCompleted: Int = 0, level: Int = 1, xp: Int = 0) : this() {
         this.id = id;
         this.username = name;
         this.email = email;

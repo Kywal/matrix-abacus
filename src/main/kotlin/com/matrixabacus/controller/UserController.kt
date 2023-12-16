@@ -5,10 +5,13 @@ import com.matrixabacus.controller.request.PutUserRequest
 import com.matrixabacus.model.User
 import com.matrixabacus.service.UserService
 import org.springframework.http.HttpStatus
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.web.bind.annotation.*
 
 @RestController
-class UserController(val userService: UserService) {
+class UserController(
+    private val userService: UserService
+) {
 
     @PostMapping("login/signUp")
     @ResponseStatus(HttpStatus.CREATED)
@@ -18,6 +21,11 @@ class UserController(val userService: UserService) {
         return user;
     }
 
+    @GetMapping("users")
+    fun getAll() : MutableIterable<User> {
+        return userService.getAll();
+    }
+
     @GetMapping("user/{id}")
     fun getUser(@PathVariable id: Int) : User {
         return userService.getUser(id);
@@ -25,8 +33,8 @@ class UserController(val userService: UserService) {
 
     @PutMapping("user/{id}/update")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    fun update(@PathVariable id: Int, @RequestBody user : PutUserRequest) {
-        userService.update(id, user.toUser());
+    fun updateName(@PathVariable id: Int?, @RequestBody putUser : PutUserRequest) {
+        userService.update(id, putUser);
     }
 
     @DeleteMapping("user/{id}/delete")

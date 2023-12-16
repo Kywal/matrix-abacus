@@ -8,6 +8,6 @@ class PostUserRequest {
     var password: String = "";
 
     fun toUser(): User {
-        return User(name, email, password);
+        return User(name = name, email = email, password = password);
     }
 }
